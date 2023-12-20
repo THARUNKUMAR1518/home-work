@@ -1,0 +1,41 @@
+//Factorial 
+#include <stdio.h>
+int main() 
+{
+ int number;
+ printf("Enter number ");
+ scanf("%d ",&number);
+ int f = fct(number);
+ printf("Factorial is %d",f);
+}
+
+int fct(int number)
+{
+    if(n<=2)
+    {
+        return number;
+    }
+    else
+    {
+        return number * fct(number-1);
+    }
+}
+
+******************************************************************************************
+
+// Fibinocci series 
+#include <stdio.h>
+int main() 
+{
+ int n12=0,m2=1,t,n;
+ printf("Enter any number:");
+ scanf("%d",&n);
+ printf("%d %d ",n12,m2);
+ for(int i=1;i<=n-2;i++)
+ {
+     t=n12+m2;
+     n12=m2;
+     m2=t;
+     printf("%d ",t);
+ }
+}
